@@ -11,8 +11,8 @@
   "dependencies": {
     "@discordjs/rest": "^2.2.0",
     "@discordjs/voice": "^0.16.1",
-    "@kodari/database": "github:YannickT1Pro/kodari-database",
-    "@kodari/shared": "github:YannickT1Pro/kodari-shared",
+    "@kodari/database": "https://github.com/YannickT1Pro/kodari-database.git",
+    "@kodari/shared": "https://github.com/YannickT1Pro/kodari-shared.git",
     "bullmq": "^5.1.1",
     "discord.js": "^14.14.1",
     "dotenv": "^16.3.1",
