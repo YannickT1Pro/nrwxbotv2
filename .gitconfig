@@ -1,4 +1,0 @@
-[url "https://${GITHUB_TOKEN}@github.com/"]
-    insteadOf = https://github.com/
-    insteadOf = git@github.com:
-    insteadOf = ssh://git@github.com/
