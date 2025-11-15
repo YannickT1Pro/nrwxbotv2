@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@kodari/database": "git+https://oauth2:$GITHUB_TOKEN@github.com/YannickT1Pro/kodari-database.git",
-    "@kodari/shared": "git+https://oauth2:$GITHUB_TOKEN@github.com/YannickT1Pro/kodari-shared.git",
+    "@kodari/database": "workspace:*",
+    "@kodari/shared": "workspace:*",
     "next": "^14.0.4",
     "next-auth": "^4.24.5",
     "react": "^18.2.0",
