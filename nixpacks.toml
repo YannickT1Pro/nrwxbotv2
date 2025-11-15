@@ -1,11 +1,16 @@
 [phases.setup]
+nixPkgs = ["nodejs_20", "git"]
 cmds = [
-  "git config --global url.\"https://${GITHUB_TOKEN}@github.com/\".insteadOf \"ssh://git@github.com/\"",
-  "git config --global url.\"https://${GITHUB_TOKEN}@github.com/\".insteadOf \"git@github.com:\""
+  "git config --global url.\"https://$GITHUB_TOKEN@github.com/\".insteadOf \"https://github.com/\"",
+  "git config --global url.\"https://$GITHUB_TOKEN@github.com/\".insteadOf \"ssh://git@github.com/\"",
+  "git config --global url.\"https://$GITHUB_TOKEN@github.com/\".insteadOf \"git@github.com:\""
 ]
 
 [phases.install]
-cmds = ["npm install"]
+cmds = ["npm ci"]
 
 [phases.build]
 cmds = ["npm run build"]
+
+[start]
+cmd = "npm run start"
